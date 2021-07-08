@@ -13,8 +13,6 @@ Original file is located at
 
 from pororo import Pororo
 from krwordrank.word import KRWordRank
-import operator
-import json
 import os
 
 # from google.colab import drive
@@ -23,8 +21,11 @@ import os
 # os.chdir('/content/drive/MyDrive/korean-summary/seoul-meeting')
 # os.listdir()
 
+os.chdir('textfiles')
+
 text_list = []
-for f in os.listdir():
+
+for f in os.listdir(): 
   with open(f) as text_file:
     text_data = text_file.read().replace("\n", " ")
     text_file.close()
