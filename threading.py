@@ -8,8 +8,8 @@ Original file is located at
 """
 
 # https://github.com/lovit/KR-WordRank
-!pip install krwordrank
-!pip install pororo
+# !pip install krwordrank
+# !pip install pororo
 
 from pororo import Pororo
 from krwordrank.word import KRWordRank
@@ -17,10 +17,10 @@ import operator
 import json
 import os
 
-from google.colab import drive
-drive.mount('/content/drive')
+# from google.colab import drive
+# drive.mount('/content/drive')
 
-os.chdir('/content/drive/MyDrive/korean-summary/seoul-meeting')
+# os.chdir('/content/drive/MyDrive/korean-summary/seoul-meeting')
 # os.listdir()
 
 text_list = []
